@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://b717ju3j4fyiq"]
 
+[ext_resource type="Script" uid="uid://njvtuysuvvqv" path="res://Scripts/main_menu.gd" id="1_28flt"]
+[ext_resource type="Script" uid="uid://b5cd5s3cvo3r1" path="res://Scripts/board_sidebar.gd" id="2_1ehe0"]
+[ext_resource type="Script" uid="uid://denjbh5a0w6t" path="res://Scripts/active_board.gd" id="3_ce3w2"]
+
 [node name="MainMenu" type="Control" unique_id=2008489363]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +11,17 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_28flt")
+
+[node name="HSplitContainer" type="HSplitContainer" parent="." unique_id=1933762805]
+layout_mode = 0
+offset_right = 311.0
+offset_bottom = 648.0
+
+[node name="BoardSidebar" type="VSplitContainer" parent="HSplitContainer" unique_id=990832743]
+layout_mode = 2
+script = ExtResource("2_1ehe0")
+
+[node name="ActiveBoard" type="VSplitContainer" parent="HSplitContainer" unique_id=1963732780]
+layout_mode = 2
+script = ExtResource("3_ce3w2")

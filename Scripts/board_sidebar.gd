@@ -1,0 +1,2 @@
+extends VSplitContainer
+class_name BoardSidebar
