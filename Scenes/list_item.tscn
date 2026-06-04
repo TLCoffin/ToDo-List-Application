@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bg50t3clj32v0"]
+
+[node name="ListItem" type="Panel" unique_id=1409051231]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=2058798104]
+layout_mode = 0
+offset_right = 371.0
+offset_bottom = 108.0
